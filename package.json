@@ -1,0 +1,41 @@
+{
+  "scripts": {
+    "build": "webpack --mode=production --env prod",
+    "dev": "webpack serve --mode=development",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-jest": "^27.2.4",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.5.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^8.0.0",
+    "jest": "^27.2.4",
+    "mini-css-extract-plugin": "^2.3.0",
+    "prettier": "^2.4.1",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.55.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
+  },
+  "dependencies": {
+    "cleave.js": "^1.6.0",
+    "creditcards": "^4.2.0",
+    "redom": "^3.27.1",
+    "validator": "^13.6.0"
+  }
+}
