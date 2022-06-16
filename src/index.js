@@ -95,20 +95,20 @@ export function createForm() {
   new Cleave(cardNum, {
     creditCard: true,
     creditCardStrictMode: true,
-    onCreditCardTypeChanged: function (type) {
+    onCreditCardTypeChanged(type) {
       const cardLogos = {
-        amex: amex,
-        dankort: dankort,
-        diners: diners,
-        discover: discover,
-        jcb: jcb,
-        maestro: maestro,
-        mastercard: mastercard,
-        mir: mir,
-        uatp: uatp,
-        unionPay: unionPay,
-        visa: visa,
-        instapayment: instapayment,
+        amex,
+        dankort,
+        diners,
+        discover,
+        jcb,
+        maestro,
+        mastercard,
+        mir,
+        uatp,
+        unionPay,
+        visa,
+        instapayment,
       };
       for (const logo in cardLogos) {
         if (logo === type) {
@@ -125,8 +125,8 @@ export function createForm() {
     datePattern: ['m', 'y'],
   });
 
-  cardCvv.addEventListener('keypress', (event) => {
-    if (isNaN(event.key) || event.key === ' ') event.preventDefault();
+  cardCvv.addEventListener('keypress', (e) => {
+    if (isNaN(e.key) || e.key === ' ') e.preventDefault();
   });
 
   submitBtn.addEventListener('click', (e) => e.preventDefault());
