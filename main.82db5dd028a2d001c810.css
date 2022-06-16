@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.form {
+  display: inline-flex;
+  flex-direction: column;
+  width: 340px;
+  padding: 20px;
+  border: 1px solid #9e9e9e;
+  border-radius: 5px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.label:last-of-type {
+  margin-bottom: 20px;
+}
+
+.wrapper .label {
+  margin-bottom: 0;
+}
+
+.input {
+  padding: 10px;
+  padding-right: 70px;
+  border: 1px solid #9e9e9e;
+  border-radius: 5px;
+}
+
+.input_small {
+  width: 60%;
+  padding-right: 10px;
+}
+
+.field-name {
+  margin-bottom: 12px;
+}
+
+.input__card-logo {
+  position: absolute;
+  display: inline-block;
+  top: 34px;
+  right: 10px;
+  width: 48px;
+  height:30px;
+  background: transparent no-repeat center / contain;
+}
+
+.btn {
+  padding: 12px 25px;
+  align-self: flex-end;
+  background-color: #0e5e5e;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.btn:disabled {
+  background-color: #9e9e9e;
+  color: #5e5e5e;
+  cursor: default;
+}
+
+.btn:active {
+  background-color: #000;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.error__message {
+  position: absolute;
+  top: 16px;
+  left: 5px;
+  background-color: #ffffff;
+  color: red;
+  font-size: 12px;
+  max-width: 280px;
+}
+
