@@ -36,6 +36,6 @@ test('Проверка создания формы с 4-мя полями вво
   expect(inputs).toHaveLength(4);
   expect(inputs).toContain(form.querySelector('[placeholder="Номер карты"]'));
   expect(inputs).toContain(form.querySelector('[placeholder="ММ/ГГ"]'));
-  expect(inputs).toContain(form.querySelector('[placeholder="ММ/ГГ"]'));
+  expect(inputs).toContain(form.querySelector('[placeholder="CVV/CVC"]'));
   expect(inputs).toContain(form.querySelector('[placeholder="Email"]'));
 });
